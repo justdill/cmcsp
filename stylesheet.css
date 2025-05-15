@@ -36,18 +36,38 @@ body {
     justify-content: center;
     font-size: 1.2em;
 }
-.floating-banner {
-  position: fixed;
-  bottom: 10px;  /* 下からの距離 */
-  right: 10px;   /* 右からの距離 */
-  z-index: 1000; /* 他の要素より前面に表示 */
-}
-.floating-banner img {
-  width: 200px;   /* 横幅を100pxに設定 */
-  height: auto;   /* 高さは自動調整で縦横比を維持 */
-}
 .topbackimg {
   width: 100vw;   /* ビューポートの幅に合わせる */
   height: auto;   /* 高さは自動調整で縦横比を維持 */
   display: block; /* 不要な隙間を防ぐ */
+}
+/* styles.css */
+
+/* 右下に固定されたボタン画像のスタイル */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* アニメーション用の画像コンテナ */
+.image-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  pointer-events: none;
+}
+
+/* アニメーション用の画像のスタイル */
+.animated-image {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transform: translate(0, 0) scale(1);
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
