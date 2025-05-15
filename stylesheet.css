@@ -6,3 +6,10 @@ body {
   text-align: center;
   padding-top: 100px;
 }
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./font/font.woff2')
+  font-weight: normal;
+  font-style: normal;
+}
