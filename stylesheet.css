@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./fonts/futurehistorydemo.woff2') format('woff2'),
+       url('./fonts/futurehistorydemo.woff') format('woff'),
+       url('./fonts/futurehistorydemo.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'CustomFont', sans-serif;
   font-size: 60px;
@@ -5,11 +14,4 @@ body {
   background-color: #FFFF00;
   text-align: center;
   padding-top: 100px;
-}
-
-@font-face {
-  font-family: 'CustomFont';
-  src: url('./fonts/futurehistorydemo.otf')
-  font-weight: normal;
-  font-style: normal;
 }
