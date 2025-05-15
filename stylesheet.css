@@ -17,6 +17,7 @@ body {
     left: 34%;
     transform: translateX(-50%);
     font-size: 150px;
+    line-height: 0.8;
     color: #FFFFFF;
     font-weight: normal;
     font-family: 'FutureHistory', sans-serif;
