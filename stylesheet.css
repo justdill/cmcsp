@@ -1,17 +1,170 @@
-@font-face {
-  font-family: 'CustomFont';
-  src: url('./fonts/futurehistorydemo.woff2') format('woff2'),
-       url('./fonts/futurehistorydemo.woff') format('woff'),
-       url('./fonts/futurehistorydemo.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-body {
-  font-family: 'CustomFont', sans-serif;
-  font-size: 60px;
-  color: #333;
-  background-color: #FFFF00;
-  text-align: center;
-  padding-top: 100px;
+ body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8E8CC;
+    position: relative;
+}
+.header-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0B4619;
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+}
+.double-line {
+    text-decoration: double underline;
+}
+.animation-textbox {
+    display: inline-block;
+    padding: 1px 4px;
+    background-color: #0B4619;
+    color: #FFCF1D;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+}
+.link {
+    margin: 2px 0;
+    color: #E8E8CC;
+    background-color: #0B4619;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s;
+}
+.link:hover {
+    color: #0B4619;
+    background-color: #FFCF1D;
+}
+.arrow {
+    font-size: 50px;
+    color: #0B4619;
+     margin-top: 300px;
+}
+.circle {
+    width: 800px;
+    height: 800px;
+    background-color: #001505;
+    margin: 40px 0;
+    border-radius: 50%;
+    position: relative;
+}
+.img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+}
+.img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+ .textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0B4619;
+    color: #FFCF1D;
+    padding: 1px 4px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+.textbox2 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFCF1D;
+    color: #0B4619;
+    padding: 1px 4px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+.textbox3 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFCF1D;
+    color: #0B4619;
+    padding: 1px 4px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}     
+.story {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: "Yellowtail", serif; /* 日本語フォントに変更 */
+}
+.storytext {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: normal;
+    max-width: 90%;
+    text-align: center;
+    font-family: 'Yu Gothic', sans-serif;
+}
+.review {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: "Yellowtail", serif;
+}
+.reviewtext {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: normal;
+    max-width: 90%;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+.yellowtail-regular {
+  font-family: "Yellowtail", serif;
+  font-weight: 400;
+  font-style: normal;
 }
