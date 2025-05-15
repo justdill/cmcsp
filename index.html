@@ -1,90 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <title>onefavorite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+    <div class="iconimg">
+        <img src="img/icon.png" alt="アイコン">
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
+    <div class="topimg">
+        <img src="img/top.jpg" alt="トップ">
     </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+    <div class="header-text">
+        <span class="double-line">独特な世界観</span> などと称されがちな作風の 
+        <span class="animation-textbox">アニメーション映画</span> をまとめました
+    </div>
+
+    <div class="link-container">
+        <a href="#paprika" class="link">パプリカ</a>
+        <a href="#planet" class="link">ファンタスティックプラネット</a>
+        <a href="#yoruhami" class="link">夜は短し歩けよ乙女</a>
+        <a href="#akira" class="link">AKIRA</a>
+        <div class="arrow">▼</div>
+    </div>
+
+    <div class="circle" id="paprika">
+        <a href="https://filmarks.com/movies/17571" target="_blank">
+            <div class="img">
+                <img src="img/papurika.jpg" alt="パプリカの写真">
+            </div>
+        </a>
+        <div class="textbox">
+            パプリカ
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        <div class="story">
+            Story
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+        <div class="storytext">
+            精神医療総合研究所で働く千葉敦子は、天才科学者である時田浩作が発明した夢を共有する装置・DCミニを使用し、
+            別人格パプリカの姿で悪夢に悩まされている患者の治療を行う優秀なサイコセラピスト。
+            ある日、DCミニが研究所から盗まれてしまい、装置を悪用して他人の夢に強制介入し、悪夢を見せて精神崩壊を起こさせる事件が発生してしまう。
+            敦子達は犯人の正体と目的、そして終わり無き悪夢から抜け出す方法を探る。
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div class="review">
+            Review
         </div>
-      </div>
-      <div class="clear"></div>
+        <div class="reviewtext">
+            今敏監督の映像表現には驚かされるばかり。
+            SFの意味のわからない世界観を意味のわからないビジュアルで表現する意味のわからない作品。
+        </div>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
+
+    <div class="circle" id="planet">
+        <a href="https://filmarks.com/movies/10347" target="_blank">
+            <div class="img">
+                <img src="img/planet.jpg" alt="ファンタスティックプラネットの写真">
+            </div>
+        </a>
+        <div class="textbox">
+            ファンタスティックプラネット
+        </div>
+        <div class="story">
+            Story
+        </div>
+        <div class="storytext">
+            舞台は地球ではないどこかの惑星。真っ青な肌に赤い目をした巨人ドラーグ族と、彼らに虫けらのように虐げられる人類オム族が住んでいる。
+            ある日、ドラーグ人の知事の娘ティバは、ドラーグ人の子どもたちにいじめられ母を亡くしたオム族の赤ん坊を拾い、テールと名付けペットとして飼うことになる—。
+            巨人ドラーグ族と人類オム族の種の存続をかけた決死の闘いを描く。
+        </div>
+        <div class="review">
+            Review
+        </div>
+        <div class="reviewtext">
+            50年以上前の完全世界観系映画。
+            どちらかというと、観ない方がいい。  
+        </div>
     </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+
+    <div class="circle" id="yoruhami">
+        <a href="https://filmarks.com/movies/71554" target="_blank">
+            <div class="img">
+                <img src="img/yoruhamijikashi.jpg" alt="夜は短し歩けよ乙女の写真">
+            </div>
+        </a>
+        <div class="textbox">
+            夜は短し歩けよ乙女
+        </div>
+        <div class="story">
+            Story
+        </div>
+        <div class="storytext">
+            クラブの後輩である“黒髪の乙女”に思いを寄せる“先輩”は今日も『なるべく彼女の目にとまる』ようナカメ作戦を実行する。
+            春の先斗町で、夏の古本市で、秋の学園祭で、乙女に近づこうとやっきになるも、空回りの連続。 
+            京都の街で、個性豊かな仲間達が次々に巻き起こす珍事件に巻き込まれながら、不思議な夜がどんどん更けてゆく。
+            外堀を埋めることしかできない“先輩”の思いはどこへ向かうのか！？ 
+        </div>
+        <div class="review">
+            Review
+        </div>
+        <div class="reviewtext">
+            個人的に世界観作画ストーリー、と一番世界観が好きなアニメーション映画。
+        </div>
     </div>
-  </footer>
+
+    <div class="arrow">▼</div>
+
+    <div class="circle" id="akira">
+        <a href="https://filmarks.com/movies/34781" target="_blank">
+            <div class="img">
+                <img src="img/akira.jpg" alt="akiraの写真">
+            </div>
+        </a>
+        <div class="textbox2">
+            番外
+        </div>
+        <div class="textbox">
+            AKIRA
+        </div>
+        <div class="story">
+            Story
+        </div>
+        <div class="storytext">
+            2019年のネオ東京。ある夜、金田をリーダーとするバイクの一団のメンバー・鉄雄が負傷した。
+            彼は突如現れた軍用へリでラボに運ばれ、不思議な力に覚醒する。
+            一方、街ではゲリラたちの銃撃戦が始まる中、謎の軍用兵器「アキラ」の覚醒が予言される。
+            暴走する鉄雄と、鉄雄を取り戻そうとする金田の戦いが始まった！
+        </div>
+        <div class="review">
+            Review
+        </div>
+        <div class="reviewtext">
+            いつか観ようと思ってちょうど一年くらいが経ったような気がする。
+            この機会に。
+        </div>
+    </div>
+
+    <div class="textbox3">
+        WD15
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
