@@ -18,10 +18,10 @@ body {
     transform: translateX(-50%);
     font-size: 150px;
     line-height: 0.8;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: normal;
     font-family: 'FutureHistory', sans-serif;
-    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.693);
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.736);
 }
 .topimg {
     align-items: center;
@@ -51,7 +51,7 @@ body {
   width: 200px;
   height: 200px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 5;
 }
 
 /* アニメーション用の画像コンテナ */
@@ -70,4 +70,5 @@ body {
   opacity: 0;
   transform: translate(0, 0) scale(1);
   transition: transform 1s ease-out, opacity 1s ease-out;
+  z-index: 5;
 }
