@@ -22,6 +22,9 @@ body {
     font-family: 'FutureHistory', sans-serif;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.693);
 }
+.topimg {
+    align-items: center;
+}
 .gradient-box {
     width: 1560px;
     height: 3000px;
@@ -41,4 +44,9 @@ body {
 .floating-banner img {
   width: 200px;   /* 横幅を100pxに設定 */
   height: auto;   /* 高さは自動調整で縦横比を維持 */
+}
+.topbackimg {
+  width: 100vw;   /* ビューポートの幅に合わせる */
+  height: auto;   /* 高さは自動調整で縦横比を維持 */
+  display: block; /* 不要な隙間を防ぐ */
 }
