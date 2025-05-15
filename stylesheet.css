@@ -32,3 +32,13 @@ body {
     justify-content: center;
     font-size: 1.2em;
 }
+.floating-banner {
+  position: fixed;
+  bottom: 10px;  /* 下からの距離 */
+  right: 10px;   /* 右からの距離 */
+  z-index: 1000; /* 他の要素より前面に表示 */
+}
+.floating-banner img {
+  width: 200px;   /* 横幅を100pxに設定 */
+  height: auto;   /* 高さは自動調整で縦横比を維持 */
+}
