@@ -1,5 +1,5 @@
 body {
-  font-family: 'Yellowtail', cursive;
+  font-family: 'CustomFont', sans-serif;
   font-size: 60px;
   color: #333;
   background-color: #FFFF00;
@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: 'CustomFont';
-  src: url('./font/font.woff2')
+  src: url('./fonts/futurehistorydemo.otf')
   font-weight: normal;
   font-style: normal;
 }
