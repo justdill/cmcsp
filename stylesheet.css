@@ -1,3 +1,4 @@
+/* ベーススタイル */
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +7,10 @@ body {
     align-items: center;
     background-color: #303030;
     position: relative;
+    font-size: 16px; /* 基本のフォントサイズ */
 }
+
+/* フォントの読み込み */
 @font-face {
     font-family: 'FutureHistory';
     src: url('fonts/futurehistorydemo.otf') format('opentype');
@@ -16,42 +20,49 @@ body {
     src: url('fonts/Richy.otf') format('opentype');
 }
 @font-face {
-  font-family: 'Bellefair';
-  src: url('fonts/Bellefair-Regular.ttf') format('truetype');
+    font-family: 'Bellefair';
+    src: url('fonts/Bellefair-Regular.ttf') format('truetype');
 }
+
+/* トップテキスト */
 .toptxt {
     position: absolute;
     top: 1%;
-    left: 34%;
+    left: 50%;
     transform: translateX(-50%);
-    font-size: 150px;
+    font-size: clamp(4rem, 8vw, 10rem);
     line-height: 0.8;
     color: #ffffff;
     font-weight: normal;
     font-family: 'FutureHistory', sans-serif;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.736);
 }
-.topimg {
-    align-items: center;
-}
-.gradient-box {
-    width: 1560px;
-    height: 3000px;
-    background: linear-gradient(to left, rgb(31, 31, 31), rgb(189, 189, 189));
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-}
-.topbackimg {
-  width: 100vw;   /* ビューポートの幅に合わせる */
-  height: auto;   /* 高さは自動調整で縦横比を維持 */
-  display: block; /* 不要な隙間を防ぐ */
-}
-/* styles.css */
 
-/* 右下に固定されたボタン画像のスタイル */
+/* 背景画像 */
+.topbackimg {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* フッター */
+.worksby {
+    font-family: 'Bellefair', sans-serif;
+    color: #ffffff;
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    padding: 20px;
+}
+
+/* リンクスタイル */
+.casperdill {
+    font-family: 'Richy', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* 右下のボタン */
 .floating-button {
   position: fixed;
   bottom: 20px;
@@ -59,35 +70,5 @@ body {
   width: 200px;
   height: 200px;
   cursor: pointer;
-  z-index: 5;
-}
-
-/* アニメーション用の画像コンテナ */
-.image-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  pointer-events: none;
-}
-
-/* アニメーション用の画像のスタイル */
-.animated-image {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  opacity: 0;
-  transform: translate(0, 0) scale(1);
-  transition: transform 1s ease-out, opacity 1s ease-out;
-  z-index: 5;
-}
-.casperdill {
-  font-family: 'Richy', sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-.worksby {
-  font-family: 'Bellefair', sans-serif;
-  color: #ffffff;
+  z-index: 9999; /* 他の要素より前面に表示 */
 }
