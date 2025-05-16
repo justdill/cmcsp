@@ -11,6 +11,14 @@ body {
     font-family: 'FutureHistory';
     src: url('fonts/futurehistorydemo.otf') format('opentype');
 }
+@font-face {
+    font-family: 'Richy';
+    src: url('fonts/Richy.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Bellefair';
+  src: url('fonts/Bellefair-Regular.ttf') format('truetype');
+}
 .toptxt {
     position: absolute;
     top: 1%;
@@ -71,4 +79,15 @@ body {
   transform: translate(0, 0) scale(1);
   transition: transform 1s ease-out, opacity 1s ease-out;
   z-index: 5;
+}
+.casperdill {
+  font-family: 'Richy', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.worksby {
+  font-family: 'Bellefair', sans-serif;
+  color: #ffffff;
 }
